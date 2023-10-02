@@ -1,7 +1,7 @@
 ### Challenge
-Name: typescrip
-Category: misc
-Difficulty: medium
+Name: typescrip  
+Category: misc  
+Difficulty: medium  
 
 ### Solution
 Run `node index.js` and wait for the flag brute force to complete

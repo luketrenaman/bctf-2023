@@ -1,7 +1,7 @@
 ### Challenge
-Name: Spa
-Category: web
-Difficulty: easy
+Name: Spa  
+Category: web  
+Difficulty: easy  
 ### Solution
 (Using chrome dev-tools)
 1. Open the console

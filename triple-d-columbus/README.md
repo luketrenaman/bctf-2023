@@ -1,7 +1,7 @@
 ### Challenge
-Name: Triple D Columbus
-Category: web
-Difficulty: beginner
+Name: Triple D Columbus  
+Category: web  
+Difficulty: beginner  
 ### Solution
 Ctrl + U, then serach for bctf to find the flag
 ### Explanation
